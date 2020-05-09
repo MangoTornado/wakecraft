@@ -1,0 +1,175 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "glhs:glhs.png",
+            "posX" : -94,
+            "posY" : 30,
+            "width" : 192,
+            "height" : 64,
+            "imageWidth" : 628,
+            "imageHeight" : 189,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "Your Own Adventure",
+            "posX" : -100,
+            "posY" : 48,
+            "width" : 200,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "Green Level High School",
+            "posX" : -100,
+            "posY" : 72,
+            "width" : 200,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip" : "158.69.52.4:25576"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "Big Brain Settings",
+            "posX" : -100,
+            "posY" : 100,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "Get Suspended",
+            "posX" : 2,
+            "posY" : 100,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : -124,
+            "posY" : 100,
+            "width" : 20,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+        
+        "refresh":
+        {
+            "text" : "",
+            "posX" : 104,
+            "posY" : 100,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        },
+
+         "discord":
+        {
+            
+            "text" : "",
+            "posX" : -172,
+            "posY" : 35,
+            "width" : 48,
+            "height" : 48,
+            "imageWidth" : 600,
+            "imageHeight" : 600,
+            "alignment" : "center",
+            "texture" : "glhs:discord.png",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://discord.gg/xEYVFev"
+            }
+        },
+
+        "patreon":
+        {
+            "text" : "",
+            "posX" : 130,
+            "posY" : 38,
+            "width" : 47,
+            "height" : 46,
+            "imageWidth" : 500,
+            "imageHeight" : 480,
+            "alignment" : "center",
+            "texture" : "glhs:patreon.png",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://www.patreon.com/gatorcraft"
+            }
+        }
+    },
+    
+    "labels":
+    {
+        "mojang":
+        {
+            "text" : "Modpack Created By Marioyoshi64.",
+            "hoverText" : "§nGatorcraft V1.5.1 Stable",
+            "posX" : -84,
+            "posY" : 70,
+            "color" : -1,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "credits"
+            }
+        }
+    },
+
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 70,
+            "posY" : 80,
+            "color" : -256,
+            "alignment" : "top_center",
+            "texts" : "file:glhs:splashes.txt"
+        },
+        
+        "background":
+        {
+            "image" : "glhs:school.png",
+            "mode" : "fill"
+        }
+    }
+}
