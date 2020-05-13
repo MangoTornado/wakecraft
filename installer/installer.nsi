@@ -35,3 +35,12 @@ Section
 	Delete "$TEMP\OpenJDK8_openj9.msi"
  
 SectionEnd
+
+!define /file OutFileSignPassword ".\CodeSign\passwd.txt"
+!define OutFileSignCertificate ".\CodeSign\certificate.pfx"
+!define OutFileSignSHA1   ".\CodeSign\signtool.exe sign /f .\CodeSign\${OutFileSignCertificate} /p ${OutFileSignPassword} /fd sha1   /t  http://timestamp.comodoca.com /v"
+!define OutFileSignSHA256 ".\CodeSign\signtool.exe sign /f .\CodeSign\${OutFileSignCertificate} /p ${OutFileSignPassword} /fd sha256 /tr http://timestamp.comodoca.com?td=sha256 /td sha256 /as /v"
+
+!finalize "${OutFileSignSHA1} .\${OutputFileName}" 
+!finalize "PING -n 5 127.0.0.1 >nul"
+!finalize "${OutFileSignSHA256} .\${OutputFileName}"
